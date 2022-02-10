@@ -1,0 +1,27 @@
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+}
+.container {
+    width:33%;
+    margin: auto;
+    padding: 5%;
+}
+
+.area1 {
+    grid-area: myArea;
+}
+.area2 {
+    grid-area: myArea2;
+}
+.area3 {
+    grid-area: myArea3;
+}
+.area4 {
+    grid-area: myArea4;
+}
+.workGrid {
+    display: grid;
+    grid-template-areas: 'myArea myArea2 myArea3 myArea4';
+}
+
