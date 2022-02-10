@@ -23,5 +23,37 @@
 .workGrid {
     display: grid;
     grid-template-areas: 'myArea myArea2 myArea3 myArea4';
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    margin:auto;
+    padding:5%;
+}
+@media only screen and (max-width: 600){
+    .flexContainer{
+        flex-direction: column;
+    }
+    .container {
+        width:100%;
+    }
+    .workGrid {
+        grid-template-areas: 'myArea myArea2 myArea3 myArea4';
+        grid-template-rows: 1fr;
+        grid-template-columns: 90x 90x 90x 90x;
+        margin:0px;
+        padding:5%;
+}
 }
 
+h1{
+    size: 48;
+    font-style: italic;
+    margin: 10px;
+}
+
+body{
+    background-color: lavender;
+}
+.button {
+    background-color: lavenderblush;
+    size: 12px;
+}
